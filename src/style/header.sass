@@ -1,0 +1,24 @@
+@import './mixins'
+@import './variables'
+    
+header
+    width: 100%
+    height: 7vh
+    background-color: $mint-cream
+    +displayFlex
+    justify-content: space-between
+    padding: 0 5vw
+    .main-title-container
+        +displayFlex
+        color: $yale-blue
+        gap: 1vw
+        .main-logo
+            height: 4vh
+        .main-heading
+            font-size: 2em
+            font-family: 'Rubik Doodle Shadow', sans-serif
+    .main-nav
+        +displayFlex
+        .main-nav-list
+            +displayFlex
+            gap: 1vw
