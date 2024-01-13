@@ -1,0 +1,20 @@
+footer {
+  background-color: rgb(238, 244, 237);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  color: rgb(19, 64, 116);
+}
+footer a {
+  color: rgb(141, 169, 196);
+  transition: 300ms;
+}
+footer a:hover {
+  color: white;
+}/*# sourceMappingURL=footer.css.map */

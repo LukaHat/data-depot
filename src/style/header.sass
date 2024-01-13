@@ -8,6 +8,7 @@ header
     +displayFlex
     justify-content: space-between
     padding: 0 5vw
+    border-bottom: 0.1vh solid rgba(19, 64, 116, 0.2)
     .main-title-container
         +displayFlex
         color: $yale-blue
@@ -17,8 +18,17 @@ header
         .main-heading
             font-size: 2em
             font-family: 'Rubik Doodle Shadow', sans-serif
+            transition: 300ms
+            &:hover
+                color: white
     .main-nav
         +displayFlex
         .main-nav-list
             +displayFlex
             gap: 1vw
+            font-family: 'Roboto', sans-serif
+            a
+                color: $yale-blue
+                transition: 300ms
+                &:hover
+                    color: white

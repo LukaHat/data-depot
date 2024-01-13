@@ -7,6 +7,7 @@ header {
   justify-content: center;
   justify-content: space-between;
   padding: 0 5vw;
+  border-bottom: 0.1vh solid rgba(19, 64, 116, 0.2);
 }
 header .main-title-container {
   display: flex;
@@ -21,6 +22,10 @@ header .main-title-container .main-logo {
 header .main-title-container .main-heading {
   font-size: 2em;
   font-family: "Rubik Doodle Shadow", sans-serif;
+  transition: 300ms;
+}
+header .main-title-container .main-heading:hover {
+  color: white;
 }
 header .main-nav {
   display: flex;
@@ -32,4 +37,12 @@ header .main-nav .main-nav-list {
   align-items: center;
   justify-content: center;
   gap: 1vw;
+  font-family: "Roboto", sans-serif;
+}
+header .main-nav .main-nav-list a {
+  color: rgb(19, 64, 116);
+  transition: 300ms;
+}
+header .main-nav .main-nav-list a:hover {
+  color: white;
 }/*# sourceMappingURL=header.css.map */
