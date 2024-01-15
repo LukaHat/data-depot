@@ -3,14 +3,23 @@
   width: 100%;
   height: 40%;
   padding-top: 2vh;
-  padding-left: 5vw;
+  padding: 0 5vw;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  gap: 5vh;
 }
 .bestsellers .bestsellers-title {
   font-size: 1.2em;
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   color: rgb(19, 64, 116);
+}
+.bestsellers .product-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  width: 100%;
 }/*# sourceMappingURL=bestseller.css.map */

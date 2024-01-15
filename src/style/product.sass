@@ -1,0 +1,23 @@
+@import './variables'
+@import './mixins'
+
+.product
+    +displayFlex
+    flex-direction: column
+    font-family: 'Roboto', sans-serif
+    color: $yale-blue
+    background-color: white
+    padding: 1em
+    border-radius: 10%
+    transition: 300ms
+    &:hover
+        box-shadow: 5px 5px 10px 5px rgba(19, 64, 116, 0.2)
+        cursor: pointer
+        transform: translateY(-1vh)
+    .product-name
+        font-size: 0.8em
+        max-width: 10vh
+    .product-image
+        width: 12vw
+        height: 14vh
+        border-bottom: 0.1vh solid rgba(19, 64, 116, 0.2)

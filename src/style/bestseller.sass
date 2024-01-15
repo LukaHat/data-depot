@@ -6,10 +6,18 @@
     width: 100%
     height: 40%
     padding-top: 2vh
-    padding-left: 5vw
+    padding: 0 5vw
     +displayFlex
+    flex-direction: column
+    gap: 5vh
     .bestsellers-title
         font-size: 1.2em
         font-family: 'Roboto', sans-serif
         font-weight: bold
         color: $yale-blue
+    .product-list
+        +displayFlex 
+        justify-content: space-between
+        width: 100%
+
+    

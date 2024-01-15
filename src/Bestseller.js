@@ -1,7 +1,7 @@
 import React from "react";
 
 //import mock product data
-import data from "./data/data";
+import { products } from "./data/data";
 import Product from "./Product";
 
 export default function Bestseller() {
@@ -9,7 +9,17 @@ export default function Bestseller() {
     <section className="bestsellers">
       <h2 className="bestsellers-title">Check out our most popular products</h2>
       <ul className="product-list">
-        <Product />
+        {products.map((product) =>
+          product.bestseller === true ? (
+            <Product
+              name={product.name}
+              imageUrl={product.imgUrl}
+              price={product.priceEuro}
+            />
+          ) : (
+            ""
+          )
+        )}
       </ul>
     </section>
   );
